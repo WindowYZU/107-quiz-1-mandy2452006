@@ -6,6 +6,7 @@
 package lendle.courses.wp.quiz_comboboxandslider;
 
 import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -20,6 +21,7 @@ public class NewJFrame extends javax.swing.JFrame {
      * Creates new form NewJFrame
      * 
      */
+    
     
     
     
@@ -121,7 +123,7 @@ public class NewJFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        
+        JFrame frame=new JFrame();
         JComboBox comboBox=new JComboBox();
         for (int i=0;i<11;i++){
          comboBox.addItem(""+(10*i));
@@ -139,6 +141,9 @@ public class NewJFrame extends javax.swing.JFrame {
  //To change body of generated methods, choose Tools | Templates.
             }
         });
+        
+        frame.add(comboBox);
+        frame.add(slider);
         
         int num=comboBox.getSelectedIndex();
         slider.setValue(num);
