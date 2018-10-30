@@ -132,7 +132,8 @@ public class NewJFrame extends javax.swing.JFrame {
         JSlider slider=new JSlider();
         slider.setMaximum(100);
         slider.setMinimum(0);
-        slider.addChangeListener(new ChangeListener() {
+        
+        comboBox.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
                 if (comboBox.getModel().getSelectedItem(int num)) {
